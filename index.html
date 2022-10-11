@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <meta charset='utf-8'>
+    </head>
+    <body>
+    	<h1> First </h1>
+   
+
+        <script>
+    	var neWin;
+    	function mywinOpen() {
+    		neWin=window.open("","_blank","top=100, left=100, width=250, height = 250, scrollbar = yes, resizable = yes");
+    		neWin.document.write("<p>Hello world</p>");
+    	}
+    	function mywinClose() {
+    		if (neWin) {
+    			neWin.close();
+    			neWin = null;
+    		}
+    	}
+        </script>
+        <button onclick = "mywinOpen()">Open</button>
+        <button onclick="mywinClose()">Close</button>
+    </body>
+</html>
